@@ -1410,6 +1410,7 @@
     \setcounter{page}{0}
     \null
     \parskip=0pt
+    \begin{singlespace}
     \begin{center}
       \vglue -.25in   % this makes top margin 2in
       % Modified by TWAB 03/12/2021 -- dont use uppercase
@@ -1494,6 +1495,7 @@
         \fi % \ifPrelim \else
       }
     \end{center}
+    \end{singlespace}
     \par\vglue 1ex\@thanks\null
   \end{titlepage}
   \setcounter{footnote}{0} % Footnotes start at zero again.
