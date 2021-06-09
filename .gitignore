@@ -1,0 +1,15 @@
+# directory produced when using minted env
+_minted-thesis/
+
+# files produced by latex compilation
+*.aux
+*.bbl
+*.blg
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+
+# swap files
+*.sw*

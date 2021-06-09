@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# title: compile.sh
+# author: twab
+# description: compile thesis.tex -> thesis.pdf
+
+# required files:
+# * thesis.tex 
+# * dukethesis.cls
+# * bibliography.bib
+# * Any additional files sourced by thesis.tex!
+
+pdflatex -shell-escape thesis.tex && \
+		bibtex thesis.aux && pdflatex -shell-escape thesis.tex
+
+# if you don't use minted, then compilation becomes very easy using tectonic:
+# $ tectonic thesis.tex
+
+# I highly recommend tectonic as a better latex compiler:
+# $ sudo apt-get install tectonic
