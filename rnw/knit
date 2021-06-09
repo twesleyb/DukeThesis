@@ -18,6 +18,6 @@ fi
 
 TEXFILE="${INFILE%.*}.tex"
 
-# parse file with knitr::knit
+# parse file with knitr::knit, suppress verbosity
 R --slave -e "knitr::knit('"$INFILE"',quiet=TRUE)" > /dev/null 2>&1 && \
 	echo "knitr::knit '"$INFILE"' --> '"$TEXFILE"'"
