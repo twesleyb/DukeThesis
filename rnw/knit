@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# compiling R-no-weave (.Rnw) files with knitr
+
+if [[ $# -eq 0 ]] ; then
+        # stop if no args passed
+	echo 'Error: provide input file for knitr::knit.'
+	exit 1
+fi
+
+INFILE="$1"
+
+if [[ ! -f "$INFILE" ]] ;  then
+        # stop if input file does not exist
+	echo 'Error: input file does not exist.'
+	exit 1
+fi
+
+TEXFILE="${INFILE%.*}.tex"
+
+# parse file with knitr::knit
+R --slave -e "knitr::knit('"$INFILE"',quiet=TRUE)" > /dev/null 2>&1 && \
+	echo "knitr::knit '"$INFILE"' --> '"$TEXFILE"'"

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# title: compile.sh
+# author: twab
+# description: compile thesis.Rnw -> thesis.pdf
+
+# thesis.Rnw is a R-no-weave file--this filetype is compiled by R's knitr::knit
+# into an latex document (NOTE: this document calls the knit script in thesis/bin)
+# thesis.tex is a latex document that can then be further compiled into a pdf
+
+# required files:
+# * thesis.Rnw
+# * dukethesis.cls
+# * bibliography.bib
+
+./knit thesis.Rnw && tectonic thesis.tex

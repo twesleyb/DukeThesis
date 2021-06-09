@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# title: tidy.sh
+# author: twab
+# description: clean-up bibliography.bib with bibtex-tidy
+
+# installation: 
+# to install bibtex-tidy, use:
+# $ sudo npm install -g bibtex-tidy
+
+# usage: bibtex-tidy [OPTIONS] bibliography.bib 
+bibtex-tidy --align 13--curly--drop-all-caps --duplicates key --encode-urls bibliography.bib 

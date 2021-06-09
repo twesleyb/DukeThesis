@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# clean-up
+
+rm -rf _minted-thesis/
+
+rm *.aux
+rm *.bbl
+rm *.blg
+rm *.lof
+rm *.log
+rm *.lot
+rm *.out
+rm *.toc
