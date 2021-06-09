@@ -10,6 +10,7 @@ _minted-thesis/
 *.lot
 *.out
 *.toc
+*.pdf
 
 # swap files
 *.sw*
