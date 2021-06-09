@@ -1,4 +1,3 @@
-
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
 \ProvidesClass{dukethesis}[2004/07/04 Duke Thesis Style]
 

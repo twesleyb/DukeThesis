@@ -1,6 +1,6 @@
 % title: thesis.tex
-% author: twab
-% description: Duke PhD Thesis
+% author: see dukethesis.cls for list of contributors
+% description: Duke PhD Thesis LaTeX Template
 
 % NOTE: to compile this document, see the ./compile script
 
@@ -28,16 +28,7 @@
 \usepackage{xcolor}
 
 % define any custom colors
-\definecolor{gray}{RGB}{240,240,240}
-%\definecolor{mygold}{RGB}{255,217,96}
-%\definecolor{myblue}{RGB}{0,120,212}
-
-% for code linting
-% NOTE: you must have python-pygments installed
-% NOTE: you must pass '-shell-escape' option to pdflatex when compiling
-% NOTE: see compile script for mint compilation
-% NOTE: for color background you must import xcolor
-\usepackage{minted}
+%\definecolor{gray}{RGB}{240,240,240}
 
 % for urls
 \usepackage[hidelinks]{hyperref}
@@ -250,26 +241,6 @@ Put the table (Table \ref{table:example}) caption above its contents.
 	\end{tabular}
 	\label{table:example}
 \end{table}
-
-
-\section{Using the Minted Package}
-
-You can use the \texttt{minted} package to lint source code. The code is not
-run, but it might be nice to showcase how smart you are by showing some source
-code. Note that if a minted environment is used, then you must pass the
-\texttt{-shell-escape} option to your LaTeX compiler.
-
-\lipsum[1]
-
-\begin{singlespace}
-\begin{minted}[bgcolor=gray]{bash}
-
-#!/bin/bash
-
-echo "hello world!"
-
-\end{minted}
-\end{singlespace}
 
 
 %% ---- chapter XX

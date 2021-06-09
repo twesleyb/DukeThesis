@@ -11,8 +11,8 @@
 # * Any additional files sourced by thesis.tex!
 
 # compiling latex can be messy! 
-pdflatex -shell-escape thesis.tex && \
-		bibtex thesis.aux && pdflatex -shell-escape thesis.tex
+#pdflatex -shell-escape thesis.tex && \
+#		bibtex thesis.aux && pdflatex -shell-escape thesis.tex
 
 # if you don't use minted, then compilation becomes very easy using tectonic:
-# $ tectonic thesis.tex
+tectonic thesis.tex
